@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Solution {
+        int i;
+        Scanner sc = new Scanner(System.in);
+        String str = sc.nextLine();
+        StringBuilder sb = new StringBuilder(str);
+        for (i = 0;i<str.length();i++ ){
+            char a =str.charAt(i);
+            if((int)a>=65&&(int)a<=89){
+                sb.setCharAt(i,(char)((int)a+32));
+            }
+        }
+        System.out.println(sb.toString());
+}
